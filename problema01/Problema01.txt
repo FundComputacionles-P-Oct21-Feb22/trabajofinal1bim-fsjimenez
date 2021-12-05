@@ -1,0 +1,57 @@
+Problema01
+
+Tomando con referencia la clase de sus ángulos, los triángulos se clasifican en:
+
+- Rectángulo tiene un ángulo recto (igual a 90°)
+- Obtusángulo tiene un ángulo obtuso (mayor que 90° pero menor 180°)
+- Acutángulo los tres ángulos son agudos (menor que 90°) Elaborar un algoritmo que permita 
+  leer el tamaño de los tres ángulos (A,B,C) de un triángulo e imprima qué tipo es.
+
+--------------------------------------------------------------------------------------------
+
+Algoritmo
+
+1. Inicio
+2. Se deben introducir los valores de los 3 ángulos del triángulo
+3. Si uno de los 3 angulos introducidos es igual a 90, es un triángulo rectángulo 
+4. Si uno de los 3 angulos introducidos es mayor que 90 pero menor que 180, es un rectángulo
+   obtusángulo
+5. Si los 3 ángulos son menores que 90, es un rectángulo acutángulo.
+6. Presentar en pantalla qué tipo de triángulo es en base de los datos introducidos.
+7. Fin
+
+--------------------------------------------------------------------------------------------
+
+Miniespecificacion
+
+1. Inicio
+2. angulo1, d[0, n]
+3. angulo2, d[0, n]
+4. angulo3, d[0, n]
+
+5. Escribir "Ingrese el primer ángulo"
+6. leer angulo1
+
+7. Escribir "Ingrese el segundo ángulo"
+8. leer angulo2
+
+9. Escribir "Ingrese el tercer ángulo"
+10. leer angulo3
+
+11. Si (angulo1 = 90 OR angulo2 = 90 OR angulo3 = 90) entonces
+12. 	Escribir "El triángulo es rectángulo"
+13.  SiNo
+14.	Si (angulo1 > 90 AND angulo1 < 180) OR  (angulo2 > 90 AND angulo2 < 180) OR (angulo3 > 90 AND angulo3 < 180) entonces
+15. 	   Escribir "El triángulo es obtusángulo"
+16.  SiNo
+17. 	Si (angulo1 < 90 AND angulo2 < 90 AND angulo3 < 90) entonces
+18. 	   Escribir "El triángulo es acutángulo"
+19. FinSi
+20.Fin		
+
+
+
+
+
+
+

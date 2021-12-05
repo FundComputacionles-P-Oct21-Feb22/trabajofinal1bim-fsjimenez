@@ -1,0 +1,52 @@
+Realice un algoritmo que lea un número de datos y calcule la media y la varianza de los mismos. El usuario decide cuando no ingresar más números.
+// Algoritmico 
+
+1. Inicio
+2. Declaro una condicion
+3. Mientras la condicion sea verdadera entonces
+4. Pido al usuario que ingrese un numero
+5. Sumo el/ los numeros que ingrese el Usuario
+6. Sumo al contador "1" cada vez que se repita el ciclo
+7. Pregunto Si el usuario quiere seguir ingresando numeros 
+8. Si si condicion se vuelve false y se termina el ciclo mientras
+9. Luego realiza la divicion entre la suma de los numero por el numero de datos ingresados que es igual ala media
+10. Luego elevo al cuadrado al el/los numeros ingresados menos la media siendo igual a numerocuadrado
+11. Luego Sumo el numercuadrado  siendo igual a sumacuadrado
+12. cacula la varianza dividiendo la sumacuadrado entre el contador - 1
+13. Presento la media
+14. Presento la varianza
+15. Fin
+
+
+// Miniespecificacion
+
+1. Inicio
+2. sumaXiX, d[0,n] <-- 0
+3. numero, d[0,n]
+4. XiX, d[o,n]
+5. media, d[o,n] <-- 0
+6. sumaNUmeros, d[o,n] <-- 0 
+7. varianza, d[0,n] <-- 0
+8. contador, i[0,n] <-- 0
+9. condicion = true
+10. salida, x(3)[{s,i},{BS}]
+
+11. Mientras (condicion) entonces
+12. Escriba " Ingrese el numero"
+13.  lea numero
+14. sumaNumeros <-- sumaNumeros + numero 
+17. contador <-- contador + 1 
+19. Escriba "Ingrese "si" para Salir"
+20. lea salida
+21. Si (salida = si) entonces
+22. condicion = false
+23. Fin_si
+24. media <-- sumaNumeros / contador
+25. XiX <-- (numero - media) * (numero - media)
+26. sumaXiX <-- sumaXiX + XiX
+27. varianza <-- sumaXiX / (contador - 1)
+28. Fin_Mientras
+29. Escribir " la media es: " + media
+30. Escribir " la varianza es: " + varianza
+
+31. Fin 

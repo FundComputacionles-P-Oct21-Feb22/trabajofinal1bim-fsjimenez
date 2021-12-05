@@ -1,0 +1,47 @@
+Problema05
+
+Dados dos puntos X y Y , que son las coordenadas del plano cartesiano, 
+haga un algoritmo para clasificar el cuadrante del plano donde está 
+ubicada la coordenada (X, Y ).
+
+----------------------------------------------------------------------
+
+Algoritmo
+
+1. Inicio
+2. Leer el valor de X y el valor de Y
+3. Si X es > 0 y Y es > 0, pertenece al primer cuadrante
+4. Si X es < 0 y Y es > 0, pertenece al segundo cuadrante
+5. Si X es < 0 y Y es < 0, pertenece al tercer cuadrante
+6. Si X es > 0 y Y es < 0, pertenece al cuarto cuadrante
+7. Imprimir en pantalla a que cuadrante pertenece la coordenada
+8. Fin
+
+----------------------------------------------------------------------
+
+Miniespecificacion
+
+1. Inicio
+2. X, d[0, n]
+3. Y, d[0, n]
+
+4. Escribir "Ingrese el valor de X:"
+5. leer X
+
+6. Escribir "Ingrese el valor de Y:"
+7. leer Y
+
+8. Si (X > 0 AND Y > 0) entonces
+9. 	Escribir "Las coordenadas pertenecen al primer cuadrante."
+10.  SiNo
+11.	Si (X es < 0 AND Y es > 0) entonces
+12. 	   Escribir "Las coordenadas pertenecen al segundo cuadrante."
+13.    SiNo
+14. 	   Si (X es < 0 AND Y es < 0) entonces
+15. 	       Escribir "Las coordenadas pertenecen al tercer cuadrante."
+16.      SiNo
+17.           Si (X es > 0 AND Y es < 0) entonces
+18. 	         Escribir "Las coordenadas pertenecen al cuarto cuadrante."
+19. FinSi
+20. Fin
+

@@ -1,0 +1,66 @@
+Problema02
+
+En un almacén de venta de trajes, si se compra uno se hace el 20% de descuento, 
+si se compran 2, el 25%, si se compran 3, el 40%, y si compra más de 3, el 50%. 
+Elaborar un algoritmo que lea la cantidad de trajes y el precio unitario (todos 
+tienen el mismo precio) e imprima el subtotal por pagar, el descuento y el total 
+por pagar.
+
+--------------------------------------------------------------------------------
+
+Algoritmos
+
+1. Inicio
+2. Introducir la cantidad de trajes que van a ser comprados
+3. Introducir el precio por cada unidad.
+4. Si se compra uno se hace el 20% de descuento, si se compran 2, el 25%, si se compran 
+   3, el 40%, y si compra más de 3, el 50%.
+5. Se halla el subtotal, multiplicando la cantidad de trajes * el precio por unidad
+6. Se halla el descuento, dividiendo (porcentaje * subtotal)/100
+7. Se halla el valor final, restando el subtotal - descuento
+8. Se muestra en pantalla el subtotal, el descuento y el valor total a pagar.
+9. Fin
+
+---------------------------------------------------------------------------------
+
+Miniespecificación
+
+1. Inicio
+2. cantidadTrajes, i[0, n]
+3. precioUnidad, d[0, n]
+4. descuento, d[0, n]
+5. porcentaje1, d[0, n] <-- 20
+6. porcentaje2, d[0, n] <-- 25
+7. porcentaje3, d[0, n] <-- 40
+8. porcentaje4, d[0, n] <-- 50
+9. subtotal, d[0, n]
+10. valorTotal, d[0, n]
+
+11. Escribir "Ingrese la cantidad de trajes a comprar:"
+12. leer cantidadTrajes
+13. Escribir "Ingrese el precio por cada unidad:"
+14. leer precioUnidad
+
+15. subtotal = cantidadTrajes * precioUnidad
+
+16. Si (cantidadTrajes = 1) entonces
+17.    descuento = (porcentaje1 * subtotal)/100
+18.    valorTotal = subtotal - descuento
+19. SiNo
+20. 	Si (cantidadTrajes = 2) entonces
+21.    	   descuento = (porcentaje2 * subtotal)/100
+22.        valorTotal = subtotal - descuento
+23.   SiNo
+24. 	   Si(cantidadTrajes = 3) entonces
+25.    	      descuento = (porcentaje3 * subtotal)/100
+26.           valorTotal = subtotal - descuento
+27.     SiNo
+28. 	      Si(cantidadTrajes > 3) entonces
+29.    	         descuento = (porcentaje4 * subtotal)/100
+30.              valorTotal = subtotal - descuento
+
+31. Escribir "El subtotal es: " + subtotal
+32. Escribir "El descuento es de: " + descuento
+33. Escribir "El costo final es de: " + valorFinal
+
+34. Fin
