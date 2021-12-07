@@ -1,34 +1,23 @@
-Problema06
-
-Elaborar un algoritmo que calcule e imprima la suma 1 + 1/2 + 1/3 + 1/4 ... + 1/100.
-
------------------------------------------------------------------------------------
-
-Algoritmo
-
+Elaborar un algoritmo que calcule e imprima la suma 1 + 1/2 + 1/3 + 1/4 ... + 1/100. Ejercicio tomado de: López Román, Leobardo. (2013) Metodología programación orientada a objetos. México	
+// Algoritmico 
 1. Inicio
-2. Escribir una fraccion cuyo denominador es 1 y el numerador es 1
-2. Definir el límite que tiene que alcanzar el denominador, que en este caso es 100
-3. Mientras el denominador sea menor o igual a 100, el numerador siempre es 1 y el 
-   denominador va aumentando de 1 en 1
-4. Entre las fracciones, tiene que ir el símbolo +
-5. Presentar en pantalla la cadena de fracciones
-6. Fin
+2. Declaramos un limite maxmimo (100) un numerador (1)  y un denominador (1)
+3. Entramos en un ciclo donde si denominador es <= limite entonces
+4. El denominador aumenta en 1 cada vez que se ejecuta el ciclo
+5. La cadena toma el valor de cadena mas el numerador mas la division del denominador
+6. Cuando el denominador sea mayor que el limite se finaliza el ciclo
+7. Presentamos la cadena
+8. Fin
 
------------------------------------------------------------------------------------
-
-Miniespecificacion
+// miniespecificacion 
 
 1. Inicio
 2. limite, i[0, n] <-- 100
 3. numerador, i[0, n] <-- 1
-4. denominador, i[0, n] <-- 2
-5. cadena, x(1000)[{0-9},{-,+, BS, /}] <-- "1"
-
-6. Haga_Hasta 	
-7.      cadena <-- cadena + " +" + numerador + "/" + denominador 
-8. 	denominador <-- denominador + 1		
-9. Fin_Haga_Hasta (denominador <= limite)
-
-10. Escribir cadena 
-11. Fin
+4. denominador, i[0, n] <-- 1
+5. cadena, x(1000)[{0-9},{-,+, BS, /}] <-- "1 "
+6. Para(denominador<--denominador<=limite, 1) haga 
+7.     cadena <-- cadena + "+ " + numerador + "/" + denominador+ " "      
+8. Fin_Para
+9. Escribir cadena
+10. Fin

@@ -1,66 +1,70 @@
-Problema02
+En un almacén de venta de trajes, si se compra uno se hace el 20% de descuento, si se compran 2, el 25%, si se compran 3, el 40%, y si compra más de 3, el 50%. Elaborar un algoritmo que lea la cantidad de trajes y el precio unitario (todos tienen el mismo precio) e imprima el subtotal por pagar, el descuento y el total por pagar.
 
-En un almacén de venta de trajes, si se compra uno se hace el 20% de descuento, 
-si se compran 2, el 25%, si se compran 3, el 40%, y si compra más de 3, el 50%. 
-Elaborar un algoritmo que lea la cantidad de trajes y el precio unitario (todos 
-tienen el mismo precio) e imprima el subtotal por pagar, el descuento y el total 
-por pagar.
+// Solucion en Algoritmo
+1.  Inicio 
 
---------------------------------------------------------------------------------
+3.  Ingrese el precio de los trajes(a)
+3.  Ingrese el numero de trajes a comprar (b)
+4.  Si el usuario compra 1 traje se relaiza el siguiente descuento 
+5.  Se multiplica el valor del traje (a) por el descuento (20%) y todo se divide por (100) (b)
+6.  Si el usuario compra 2 trajes se realiza el siguiente descuento 
+7.  Se multiplica el valor de los trajes (a) por el descuento (25%) y todo se divide por (100) (c)
+8.  Si el usuario compra 3 trajes se realiza el siguiente descuento 
+9.  Se multiplica el valor de los trajes (a) por el descuento (40%) y todo se divide por (100) (d)
+10. Si el usuario compra mas de 3 trajes se realiza el siguiente descuento 
+11. Se multiplica el valor de los trajes (a) por el descuento (50%) y todo se divide por (100) (e)
+12. Se presenta el subtotal del precio de los trajes (a)
+13. Dependiendo del numero de trajes (b) se presenta el total
 
-Algoritmos
+14. Fin
 
-1. Inicio
-2. Introducir la cantidad de trajes que van a ser comprados
-3. Introducir el precio por cada unidad.
-4. Si se compra uno se hace el 20% de descuento, si se compran 2, el 25%, si se compran 
-   3, el 40%, y si compra más de 3, el 50%.
-5. Se halla el subtotal, multiplicando la cantidad de trajes * el precio por unidad
-6. Se halla el descuento, dividiendo (porcentaje * subtotal)/100
-7. Se halla el valor final, restando el subtotal - descuento
-8. Se muestra en pantalla el subtotal, el descuento y el valor total a pagar.
-9. Fin
-
----------------------------------------------------------------------------------
-
-Miniespecificación
+// Solucion en miniespecificacion
 
 1. Inicio
-2. cantidadTrajes, i[0, n]
-3. precioUnidad, d[0, n]
-4. descuento, d[0, n]
-5. porcentaje1, d[0, n] <-- 20
-6. porcentaje2, d[0, n] <-- 25
-7. porcentaje3, d[0, n] <-- 40
-8. porcentaje4, d[0, n] <-- 50
-9. subtotal, d[0, n]
-10. valorTotal, d[0, n]
 
-11. Escribir "Ingrese la cantidad de trajes a comprar:"
-12. leer cantidadTrajes
-13. Escribir "Ingrese el precio por cada unidad:"
-14. leer precioUnidad
+2. precioT, i[0,n]
+3. numeroT, i[0,n]
+4. porcentaje1, d[0,n]
+5. porcentaje2, d[0,n]
+6. porcentaje3, d[0,n]
+7. porcentaje4, d[0,n]
+8. descuento, d[0,n]
+9. valorSub, d[0,n]
+10. valorTot, d[0,n]
 
-15. subtotal = cantidadTrajes * precioUnidad
+11. porcentaje1 <-- 20 
+12. porcentaje2 <-- 25
+13. porcentaje3 <-- 40
+14. porcentaje3 <-- 50
 
-16. Si (cantidadTrajes = 1) entonces
-17.    descuento = (porcentaje1 * subtotal)/100
-18.    valorTotal = subtotal - descuento
-19. SiNo
-20. 	Si (cantidadTrajes = 2) entonces
-21.    	   descuento = (porcentaje2 * subtotal)/100
-22.        valorTotal = subtotal - descuento
-23.   SiNo
-24. 	   Si(cantidadTrajes = 3) entonces
-25.    	      descuento = (porcentaje3 * subtotal)/100
-26.           valorTotal = subtotal - descuento
-27.     SiNo
-28. 	      Si(cantidadTrajes > 3) entonces
-29.    	         descuento = (porcentaje4 * subtotal)/100
-30.              valorTotal = subtotal - descuento
+15. Escriba "Ingrese el numero de trajes a comprar"
+16. Lea numeroT
+17. Escriba "Ingrese el precio de los trajes a comprar"
+18. Lea precioT
+19. valorSub <-- precioT * numeroT
 
-31. Escribir "El subtotal es: " + subtotal
-32. Escribir "El descuento es de: " + descuento
-33. Escribir "El costo final es de: " + valorFinal
+20. Si ( numeroT = 1) entonces 
+21.  descuento <-- (porcentaje1 * valorTot)/100
+22.   valorTot <-- valorTot - porcentaje1 // vt <-- 100 - 20 = 80 %
+23. Fin si
 
-34. Fin
+24. Si ( numeroT = 2) entonces 
+25.  descuento <-- (porcentaje2 * valorTot)/100
+26.   valorTot <-- valorTot - porcentaje2 // vt <-- 100 - 25 = 75 %
+27. Fin si
+
+28. Si ( numeroT = 3) entonces 
+29.  descuento <-- (porcentaje3 * valorTot)/100
+30.   valorTot <-- valorTot - porcentaje3 // vt <-- 100 - 40 = 60 %
+31. Fin si
+
+32. Si ( numeroT > 3) entonces 
+33.  descuento <-- (porcentaje4 * valorTot)/100
+34.   valorTot <-- valorTot - porcentaje4 // vt <-- 100 - 50 = 50 %
+35. Fin si
+
+36. Escribir "El valor total a pagar es: " + valorTot
+37. Escribir "El valor subtotal a pagar es: " + valorSub
+38. Escribir " El valor del descuento es: " + descuento
+
+39. Fin

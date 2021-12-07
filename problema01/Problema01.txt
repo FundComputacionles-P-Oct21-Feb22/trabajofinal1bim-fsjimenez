@@ -1,57 +1,46 @@
-Problema01
+Rectángulo tiene un ángulo recto (igual a 90°)
+Obtusángulo tiene un ángulo obtuso (mayor que 90° pero menor 180°)
+Acutángulo los tres ángulos son agudos (menor que 90°) 
+Elaborar un algoritmo que permita leer el tamaño de los tres ángulos (A,B,C) de un triángulo e imprima qué tipo es.
 
-Tomando con referencia la clase de sus ángulos, los triángulos se clasifican en:
+//Algoritmo
+1.Pida que el usuario ingrese el Angulo A
+2.Pida que el usuario ingrese el Angulo B
+3.Pida que el usuario ingrese el Angulo C
+4.Sumamos el Angulo A (a), el Angulo B (b) y el Angulo C (c) = (e)
+5.Si el Angulo A o el Angulo B o el Angulo C son iguales a 90 entonces se presenta la suma de las de los angulos (e) y el tipo de Triangulo "Rectangulo"
+6.Si elAngulo A es mayor que 90 y menor que 180 o el AnguloB es mayor a 90 y menor que 180 o el AnguloC es menor que 90 y menor que 180 entonces se presenta la suma de las de los angulos (e) y el tipo de Triangulo "Obtusángulo"
+7.Si el AnguloA es menor a 90 y el AnguloB es menor a 90 y el AnguloC es menor a 90 entonces se presenta la suma de las de los angulos (e) y el tipo de Triangulo "Acutángulo" 
+ 
+// Miniespecificacion
+1.Inicio
 
-- Rectángulo tiene un ángulo recto (igual a 90°)
-- Obtusángulo tiene un ángulo obtuso (mayor que 90° pero menor 180°)
-- Acutángulo los tres ángulos son agudos (menor que 90°) Elaborar un algoritmo que permita 
-  leer el tamaño de los tres ángulos (A,B,C) de un triángulo e imprima qué tipo es.
+2. anguloA, i[0.n]
+3. anguloB, i[0.n]
+4. anguloC, i[0.n]
+5. SumaABC, i[0.n]<-- 0
 
---------------------------------------------------------------------------------------------
+6.  Ingrese el Angulo A 
+7.  lea AnguloA 
+9.  Ingrese el Angulo B
+10. lea AnguloB
+11. Ingresa el Angulo C
+12. lea AnguloC
+13. SumaABC = AnguloA + AnguloB + AnguloC
 
-Algoritmo
+13. Si (AnguloA = 90 || AnguloB= 90 || AnguloC = 90) entonces
+14.  Presente " La suma de los angulos es: " + SumaABC
+15.  Presente "El tipo de triangulo es: rectangulo" 
+16. Fin_Si
 
-1. Inicio
-2. Se deben introducir los valores de los 3 ángulos del triángulo
-3. Si uno de los 3 angulos introducidos es igual a 90, es un triángulo rectángulo 
-4. Si uno de los 3 angulos introducidos es mayor que 90 pero menor que 180, es un rectángulo
-   obtusángulo
-5. Si los 3 ángulos son menores que 90, es un rectángulo acutángulo.
-6. Presentar en pantalla qué tipo de triángulo es en base de los datos introducidos.
-7. Fin
+17. Si (anguloA > 90 && anguloA < 180 || anguloB > 90 && anguloB < 180|| anguloC > 90 && anguloC < 180) entonces
+18.  Presente " La suma de los angulos es: " + SumaABC
+19.  Presente "El tipo de triangulo es: obtusangulo" 
+20. Fin_Si
 
---------------------------------------------------------------------------------------------
+21. Si (anguloA < 90 && anguloB < 90 && anguloC < 90) entonces
+22.  Presente " La suma de los angulos es: " + SumaABC
+23.  Presente "El tipo de triangulo es: acutangulo"
+24. Fin_Si
 
-Miniespecificacion
-
-1. Inicio
-2. angulo1, d[0, n]
-3. angulo2, d[0, n]
-4. angulo3, d[0, n]
-
-5. Escribir "Ingrese el primer ángulo"
-6. leer angulo1
-
-7. Escribir "Ingrese el segundo ángulo"
-8. leer angulo2
-
-9. Escribir "Ingrese el tercer ángulo"
-10. leer angulo3
-
-11. Si (angulo1 = 90 OR angulo2 = 90 OR angulo3 = 90) entonces
-12. 	Escribir "El triángulo es rectángulo"
-13.  SiNo
-14.	Si (angulo1 > 90 AND angulo1 < 180) OR  (angulo2 > 90 AND angulo2 < 180) OR (angulo3 > 90 AND angulo3 < 180) entonces
-15. 	   Escribir "El triángulo es obtusángulo"
-16.  SiNo
-17. 	Si (angulo1 < 90 AND angulo2 < 90 AND angulo3 < 90) entonces
-18. 	   Escribir "El triángulo es acutángulo"
-19. FinSi
-20.Fin		
-
-
-
-
-
-
-
+25. Fin

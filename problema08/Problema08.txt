@@ -1,35 +1,24 @@
-Problema08
+Elaborar un algoritmo que permita leer una medida (N) en número de metros y que imprima una tabla de equivalencias a yardas, pulgadas y pies, desde 1 metro hasta N metros de uno en uno. Equivalencias: 1 pie = 12 pulgadas, 1 yarda = 3 pies, 1 pulgada = 2.54 cm, 1 metro = 100 cm. Se debe imprimir la tabla siguiente:
 
-Elaborar un algoritmo que permita leer una medida (N) en número de metros 
-y que imprima una tabla de equivalencias a yardas, pulgadas y pies, desde 
-1 metro hasta N metros de uno en uno. Equivalencias: 1 pie = 12 pulgadas, 
-1 yarda = 3 pies, 1 pulgada = 2.54 cm, 1 metro = 100 cm.
-
---------------------------------------------------------------------------
-
-Miniespecificacion
-
+// Miniespecificacion
 1. Inicio
-2. limite, i[0, n]
-3. yardas, d[0, n]
-4. pulgadas, d[0, n]
-5. pies, d[0, n]
-6. centimetros, d[0, n]
-6. metro, i[0, n] <-- 1
-5. cadena, x(1000)[{0-9},{-,+, BS, /}] <-- ""
-
-6. Escribir "Ingrese el número de metros(no se admiten decimales):"
-7. leer limite
-
-9. Haga_Hasta 
-10.    centimetros = metro * 0.01
-11.    pulgadas = centimetro * 2.54
-12.    pies = pulgada * 12
-13.    yardas = pie * 3
-14.    cadena <-- cadena +  metros + "	  " + yardas + "    " + pulgadas + "     " + pies + "\n"
-15.    metro = metro + 1
-16. Fin_Haga_Hasta (metro = limite)
-
-17. Escribir "Metros	Yardas 	  Pulgadas    Pies"
-18. Escribir cadena
-19. Fin
+2.  limite, i[0,n]
+3.  metro, d[0,n] <-- 1
+4.  centimetro, d[0,n]
+5.  pulgada, d[0,n]
+6.  pies, d[0,n]
+7.  yarda, d[0,n]
+8.  cadena,  x(1000)[{0-9},{-,+, BS, /}]<-- ""
+9. Escriba "Ingrese el numero hasta el que generar" 
+10.  lea limite
+11.  Mientras ( metro <= limite) entonces
+12. centimetro = metro * 100
+13. pulgada = centimetro / 2.53
+14. pies = pulgada / 12
+15. yarda = pies / 3
+16. cadena =  cadena + "   " + metro + "   "  + yarda + "   "  + pulgada + "   " + pies 
+17. metro = metro + 1
+17. Fin_Mientras
+18. Escribir " Metros    Yardas   Pulgadas   Pies"
+19. Escribir (cadena) 
+20. Fin

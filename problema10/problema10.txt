@@ -32,21 +32,20 @@ Realice un algoritmo que lea un número de datos y calcule la media y la varianz
 10. salida, x(3)[{s,i},{BS}]
 
 11. Mientras (condicion) entonces
-12.   Escriba " Ingrese el numero"
-13.   leer numero
-14.   sumaNumeros <-- sumaNumeros + numero 
-17.   contador <-- contador + 1 
-19.   Escriba "Ingrese "si" para Salir"
-20.   leer salida
-21.   Si (salida = si) entonces
-22. 	condicion = false
-23.   Fin_si
-24.   media <-- sumaNumeros / contador
-25.   XiX <-- (numero - media) * (numero - media)
-26.   sumaXiX <-- sumaXiX + XiX
-27.   varianza <-- sumaXiX / (contador - 1)
+12. Escriba " Ingrese el numero"
+13.  lea numero
+14. sumaNumeros <-- sumaNumeros + numero 
+17. contador <-- contador + 1 
+19. Escriba "Ingrese "si" para Salir"
+20. lea salida
+21. Si (salida = si) entonces
+22. condicion = false
+23. Fin_si
+24. media <-- sumaNumeros / contador
+25. XiX <-- (numero - media) * (numero - media)
+26. sumaXiX <-- sumaXiX + XiX
+27. varianza <-- sumaXiX / (contador - 1)
 28. Fin_Mientras
-
 29. Escribir " la media es: " + media
 30. Escribir " la varianza es: " + varianza
 

@@ -1,32 +1,22 @@
-Problema09
-
-Utilizando una estructura repetitiva diseñe un algoritmo para calcular e 
-imprimir los k primeros términos de la serie:
-
+Utilizando una estructura repetitiva diseñe un algoritmo para calcular e imprimir los k primeros términos de la serie:
 S1 = 12−11+24−22+36−33+48−44
 
-------------------------------------------------------------------------
-
-Miniespecificación:
-
 1. Inicio
-2. c1, i[0, n] <-- 12
-3. c2, i[0, n] <-- 11
-4. limite, i[0, n]
-5. c3, i[0, n] <-- 0
-6. contador. i[0, n] <-- 1
-
-7. Escribir "Ingrese el número de términos a presentar: "
-8. leer limite
-
-9. Mientras(contador <= limite) haga
-10.   Si (contador MOD 2 = 0) entonces
-11.	 c3 = c3 + c1
-12.     SiNo
-13. 	   si (contador MOD 2 = 1)
-14.	     c3 = c1 - c2
-15.   FinSi
-16.   Escribir "Los " + contador " primeros términos equevalen a: " + c3 
-17.   contador = contador + 1
-18. Fin_Mientras
- 
+2. limite, i[0, n]
+3. numero1, i[0, n] <-- 0
+4. numero2, i[0, n] <-- 0
+5. contador, i[0,n] <-- 0
+6. cadena, x(1000)[{0-100},{-,+, BS, /}] <-- "S1 = "
+7. Escribir " Ingrese el numero de terminos a presentar"
+8. lea limite
+7. Mientras contador < limite entonces
+12. contador<-- contador + 1   
+13. numero1<-- numero1 + 12 
+14. numero2<-- numero2 + 11
+15. si contador = limite entonces
+16. cadena <-- cadena + numero1 + " - " + numero2
+17. Fin_si
+18.     cadena <-- cadena +  numero1 + " - "  + numero2  + " + " 
+19. Fin_Mientras 
+20. Escribir "El resultado de los primeros términos es:" + cadena
+21. Fin 

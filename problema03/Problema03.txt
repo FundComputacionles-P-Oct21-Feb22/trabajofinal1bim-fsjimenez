@@ -1,49 +1,50 @@
-Problema03
-Elaborar un algoritmo que permita leer los datos de un empleado (nombre, tipo de 
-empleado, número de horas trabajadas y cuota que se le paga por hora) y calcule e 
-imprima el sueldo por pagar. Si el empleado es tipo 1 se le pagan las horas extras 
-(más de 40 horas) a 1.5 de la cuota por hora, si es tipo 2, a 2, si es tipo 3, a 
-2.5, y si es tipo 4, a 3 veces la cuota por hora.
--------------------------------------------------------------------------------------
-
-Miniespecificacion
+Elaborar un algoritmo que permita leer los datos de un empleado (nombre, tipo de empleado, 
+número de horas trabajadas y cuota que se le paga por hora) y calcule e imprima el sueldo por pagar. 
+Si el empleado es tipo 1 se le pagan las horas extras (más de 40 horas) a 1.5 de la cuota por hora, 
+si es tipo 2, a 2, si es tipo 3, a 2.5, y si es tipo 4, a 3 veces la cuota por hora.
 
 1. Inicio
-2. nombre, x(n)[{a-z}, {A-Z}, {BS}]
-3. tipoEmpleado, i[0, n]
-4. numeroHoras, d[0, n]
-5. cuotaHora, d[0, n]
-6. sueldo, d[0, n]
 
-11. Escribir "Ingrese el nombre del empleado:"
-12. leer nombre
+2. nombreE,  x(100)[{a-z},{A-Z},{BS}]
+3. tipoE, i[0,n]
+4. numeroH, d[0,n]
+5. cuota1,  d[0,n]
+6. cuota2,  d[0,n]
+7. cuota3,  d[0,n]
+8. cuota4,  d[0,n]
+9. valorSub, d[0,n]
+10. valorTot, d[0,n]
 
-13. Escribir "Ingrese el tipo de empleado (1, 2, 3 o 4):"
-14. leer tipoEmpleado
+11. cuota1 <-- 1.5 
+12. cuota2 <-- 2
+13. cuota3 <-- 2.5
+14. cuota4 <-- 3
 
-13. Escribir "Ingrese el número de horas trabajadas:"
-14. leer numeroHoras
+15. Escriba "Ingrese el nombre del trabajador"
+16. Lea nombreE
+17. Escriba "Ingrese el de trabajador (1,2,3 o 4) "
+18. Lea tipoE
+19. Escriba "Ingrese el numero de horas trabajadas"
+20. Lea numeroH 
+21. valorSub <-- numeroH  * 1 
 
-13. Escribir "Ingrese la cuota a pagar por hora:"
-14. leer cuotaHora
+22. Si ( tipoE = 1) entonces 
+23.  valorT <-- ( cuota1 * valorSub )
+24. Fin si
 
+25. Si ( tipoE = 2) entonces 
+26.  valorT <-- ( cuota2 * valorSub )
+27. Fin si
 
-16. Si (numeroHoras >=40 AND tipoEmpleado = 1) entonces
-17.    cuotaHora = 1.5 * cuotaHora
-18.    sueldo = cuotaHora * numeroHoras
-19. SiNo
-20. 	Si (tipoEmpleado = 2) entonces
-21.    	   cuotaHora = 2 * cuotaHora
-22.        sueldo = cuotaHora * numeroHoras
-23.   SiNo
-24. 	   Si(tipoEmpleado = 3) entonces
-25.    	      cuotaHora = 2.5 * cuotaHora
-26.           sueldo = cuotaHora * numeroHoras
-27.     SiNo
-28. 	      Si(tipoEmpleado = 4) entonces
-29.    	         cuotaHora = 3 * cuotaHora
-30.              sueldo = cuotaHora * numeroHoras
+28. Si ( tipoE = 3) entonces 
+29.  valorT <-- ( cuota3 * valorSub )
+30. Fin si
 
-31. Escribir "El sueldo es de: " + sueldo 
-32. Fin
- 
+31. Si ( tipoE = 4) entonces 
+32.  valorT <-- ( cuota4 * valorSub )
+33. Fin si
+
+34. Escribir "El valor total del sueldo es: " + valorTot
+35. Escribir "El valor subtotal del sueldo a pagar es: " + valorSub
+
+36. Fin

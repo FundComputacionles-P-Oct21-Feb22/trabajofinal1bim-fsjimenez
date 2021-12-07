@@ -1,47 +1,40 @@
-Problema05
+Dados dos puntos X y Y , que son las coordenadas del plano cartesiano, haga un algoritmo para clasificar el cuadrante del plano donde está ubicada la coordenada (X, Y ).
+//algoritmo
+1.Inicio
+2. Pedir al usuario el el punto X
+3. Pedir al usuario el el punto Y
+4. Si el punto X < que 0 y el punto Y < que 0 entonces
+5. presentar " los puntos pertenecen al tercer cuadrante"
+6. Si el punto X > que 0 y el punto Y < que 0 entonces
+7. presentar " los puntos pertenecen al segundo cuadrante"
+8. Si el punto X > que 0 y el punto Y > que 0 entonces
+9. presentar " los puntos pertenecen al primer cuadrante"
+10. Si el punto X < que 0 y el punto Y > que 0 entonces
+11. presentar " los puntos pertenecen al cuarto cuadrante"
+12. Fin
 
-Dados dos puntos X y Y , que son las coordenadas del plano cartesiano, 
-haga un algoritmo para clasificar el cuadrante del plano donde está 
-ubicada la coordenada (X, Y ).
+// miniespecificacion
+1.Inicio
+2. puntoX, i[0,r] 
+3. puntoY, i[0,r]
+4. Escribir " Ingrese el punto X"
+5. lea puntoX
+6. Escribir " Ingrese el punto y"
+7. lea puntoY
+8. Si puntoX < 0 && puntoY < 0 entonces 
+9. Escriba " Pertenece al tercer cuadrante"
+10. Fin_si
+10. Si puntoX >= 0 && puntoY < 0 entonces 
+11. Escriba " Pertenece al segundo cuadrante"
+12. Fin_si
+13. Si puntoX > 0 && puntoY > 0 entonces
+14. Escriba " Pertenece al primer cuadrante"
+15. Fin_si
+16. Si puntoX < 0 && puntoY >= 0 entonces
+17. Escriba " Pertenece al cuarto cuadrante"
+18. Fin_si
+19. Si puntoX = 0 && puntoY = 0 entonces
+20. Escriba " coordenadas pertenecientes al origen"
+21. Fin_si
 
-----------------------------------------------------------------------
-
-Algoritmo
-
-1. Inicio
-2. Leer el valor de X y el valor de Y
-3. Si X es > 0 y Y es > 0, pertenece al primer cuadrante
-4. Si X es < 0 y Y es > 0, pertenece al segundo cuadrante
-5. Si X es < 0 y Y es < 0, pertenece al tercer cuadrante
-6. Si X es > 0 y Y es < 0, pertenece al cuarto cuadrante
-7. Imprimir en pantalla a que cuadrante pertenece la coordenada
-8. Fin
-
-----------------------------------------------------------------------
-
-Miniespecificacion
-
-1. Inicio
-2. X, d[0, n]
-3. Y, d[0, n]
-
-4. Escribir "Ingrese el valor de X:"
-5. leer X
-
-6. Escribir "Ingrese el valor de Y:"
-7. leer Y
-
-8. Si (X > 0 AND Y > 0) entonces
-9. 	Escribir "Las coordenadas pertenecen al primer cuadrante."
-10.  SiNo
-11.	Si (X es < 0 AND Y es > 0) entonces
-12. 	   Escribir "Las coordenadas pertenecen al segundo cuadrante."
-13.    SiNo
-14. 	   Si (X es < 0 AND Y es < 0) entonces
-15. 	       Escribir "Las coordenadas pertenecen al tercer cuadrante."
-16.      SiNo
-17.           Si (X es > 0 AND Y es < 0) entonces
-18. 	         Escribir "Las coordenadas pertenecen al cuarto cuadrante."
-19. FinSi
-20. Fin
-
+22. Fin

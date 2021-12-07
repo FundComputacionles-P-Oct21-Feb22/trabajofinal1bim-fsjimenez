@@ -1,31 +1,18 @@
-Problema07
-
-Elaborar un algoritmo que permita leer un número par y calcule e imprima 
-la suma de los números pares del 2 hasta el número leído. Si el número 
-leído es menor a 2 debe imprimir un mensaje de error.
-
---------------------------------------------------------------------------
-
-Miniespecificacion
+Elaborar un algoritmo que permita leer un número par y calcule e imprima la suma de los números pares del 2 hasta el número leído. Si el número leído es menor a 2 debe imprimir un mensaje de error.
 
 1. Inicio
-2. limite, i[0, n] 
-3. numero, i[0, n] <-- 2
-4. suma, i[0, n] <-- 0
-5. cadena, x(1000)[{0-9},{-,+, BS, /}] <-- ""
-
-6. Esccribir "Ingrese un número par"
-7. leer limite
-
-8. Haga_Hasta
-9.	Si limite < 2 entonces
-10.         Escribir "Error. El número es menor a 2"
-11.	SiNo
-12.	   suma <-- suma + numero
-13. 	   cadena <-- cadena + "numero" + " + "
-14. 	   numero <-- numero + 2
-15.	FinSi    
-16. Fin_Haga_Hasta (numero = limite)
-
-17. Escribir cadena + " = " + suma
-18. Fin
+3. numero1, i[0, n]
+4. numero2, i[0, n] <-- 0
+5. cadena,  x(1000)[{0-9},{-,+, BS, /}]<-- ""
+6. resultado,i[0, n] <-- 2
+7. Escriba "Ingrese el numero a calcular"
+8. Lea numero1
+9. Si numero1 < numero2 entonces
+10. Escribir " Error numero ingresado menor a 2"
+11. Fin_si
+12. Mientras numero1 > numero2 entonces 
+13. numero2<-- numero2 + 2   
+14. resultado <-- resultado + 2 
+15. cadena <-- cadena + numero2 + "+ 2" + " = " + resultado + " "  
+16. Fin_Mientras
+17. Fin
